@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out -nojekyll"
+    "deploy": "gh-pages -d out -nojekyll -r https://github.com/amitkumarnayak98/fr-assign-main"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
