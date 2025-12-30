@@ -1,0 +1,199 @@
+.app {
+  background-color: #dbcddc6e;
+  height: 100vh;
+  width: 99vw;
+}
+
+.db-logo {
+  border-radius: 50px;
+}
+
+.details-container {
+  width: 100%;
+}
+
+.app_header-logo {
+  width: 5%;
+  border: 1px solid red;
+  display: flex;
+
+  gap: 20px;
+}
+/* # #f8eafacb */
+/* #dbcddc95 */
+.app_header {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+  /* background-color: #FFFFFF; */
+  border-bottom: 1px solid #ececef;
+
+  border: 1px solid green;
+}
+
+.app_header_dropdown_container {
+  width: 15%;
+  position: relative;
+  /* <--- CRITICAL */
+  display: inline-block;
+  /* Ensures it only takes up necessary width */
+}
+
+.dropdown_menu {
+  position: absolute;
+  /* <--- CRITICAL: Removes it from the flow */
+  top: 100%;
+  /* Starts exactly at the bottom of the container */
+  left: 0;
+  /* Aligns with the left edge */
+
+  margin-top: 8px;
+  /* Adds a tiny gap so it doesn't touch the name */
+  width: 200px;
+  /* Set a width so it doesn't squash */
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* Nice floaty shadow */
+  z-index: 50;
+  /* Ensures it sits ON TOP of everything else */
+
+  /* Optional: styling the list */
+  list-style: none;
+  padding: 12px;
+}
+
+.search-bar {
+  height: 35px;
+  width: 25%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: 3px solid #ececef;
+}
+
+input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.top-bar-container {
+  background-color: #ffffff;
+  height: 30px;
+  width: 66%;
+  border-radius: 50px;
+}
+
+.app_body {
+  padding-top: 15px;
+  height: calc(100vh - 64px);
+  border: 1px solid blue;
+}
+
+.app_body-icons {
+  width: 5%;
+  height: 100%;
+  border: 1px solid yellow;
+}
+
+.event-icons {
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.app_body-hierarchy {
+  width: 15%;
+  height: 100%;
+  border: 1px solid violet;
+}
+
+.settings-icons {
+  gap: 20px;
+}
+
+.app_body-details {
+  margin-left: 50px;
+}
+
+.app_body-details {
+  width: calc(100vw - 25.5%);
+  background: #ffffff;
+  border-radius: 25px;
+}
+
+.body-container {
+  /* border: 1px solid white; */
+  height: 45px;
+  /* border: 1px solid pink; */
+  margin-top: 20px;
+}
+
+.chips-container {
+  gap: 25px;
+}
+
+.cards {
+  width: 30%;
+  height: 83%;
+  gap: 23;
+}
+
+.card {
+  border: 1px solid #80808099;
+  width: 40%;
+  border-radius: 9px;
+  justify-content: space-around;
+}
+/* // =========================================
+// 1. BRAND & ACCENT COLORS
+// =========================================
+// The main pink/red used for the active sidebar icon, chart bars, and badges
+$color-primary:       #E83E5E; 
+// Lighter variation for hover states or soft backgrounds
+$color-primary-light: #FFEBEE; 
+
+// Deep black/navy used for the "Best deal" card, "Details" button, and sidebar text
+$color-secondary:     #1A1B25; 
+
+
+// =========================================
+// 2. TEXT COLORS
+// =========================================
+// Main headings (e.g., "$528,976", "New report")
+$text-main:           #111111; 
+
+// Secondary text (e.g., "vs prev...", labels, dates)
+$text-muted:          #8D8D99; 
+
+// Text on dark backgrounds (like inside the Black or Pink cards)
+$text-inverse:        #FFFFFF;
+
+
+// =========================================
+// 3. BACKGROUNDS & SURFACES
+// =========================================
+// The main background of the dashboard area (very light gray)
+$bg-app:              #F8F9FB; 
+
+// The white used for the cards/widgets
+$bg-surface:          #FFFFFF; 
+
+// The sidebar background (appears to be white or very faint gray)
+$bg-sidebar:          #FFFFFF; 
+
+
+// =========================================
+// 4. BORDERS & UTILS
+// =========================================
+$border-light:        #ECECEF; // Subtle dividers between items
+$radius-card:         20px;    // The rounded corners on cards are quite soft
+$radius-button:       12px;    // Slightly tighter radius for buttons
+$shadow-soft:         0 4px 12px rgba(0, 0, 0, 0.03); // Subtle drop shadow for cards */
