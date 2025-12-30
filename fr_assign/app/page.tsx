@@ -405,7 +405,7 @@ export default function Home() {
         display: "none",
         borderTop: "1px dashed rgba(0, 0, 0, 0.4)",
       },
-      [`& > .${treeItemClasses?.group}`]: {
+      [`& > .${(treeItemClasses as any)?.group}`]: {
         borderLeft: "none",
         marginLeft: 0,
         paddingLeft: 0,
@@ -423,7 +423,7 @@ export default function Home() {
       [`& > .${treeItemClasses.content}::before`]: {
         display: "none",
       },
-      [`& > .${treeItemClasses?.group}`]: {
+      [`& > .${(treeItemClasses as any)?.group}`]: {
         borderLeft: "none",
         marginLeft: 0,
         paddingLeft: 0,
@@ -455,7 +455,7 @@ export default function Home() {
     nodes.map((node) => (
       <CustomTreeItem
         key={node.id}
-        itemId={node.id}
+        itemId={node.id ?? ""}
         data-root-level={node.rootLevel ?? 0} // 👈 ADD THIS
         label={
           <Box
