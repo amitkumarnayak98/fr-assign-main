@@ -621,30 +621,37 @@ export default function Home() {
             color: "#111",
           }}
         >
-          <div
-            className="app_header_title flex align-center"
-            onClick={() => setGraphFilterIcon(!graphFilterIcon)}
-          >
-            <span>
-              <FormatAlignLeftSharpIcon />
-            </span>
-
-            <svg
-              style={{
-                transform: graphFilterIcon ? "rotate(180deg)" : "rotate(0deg)",
-                transition: "transform 0.4s ease",
-              }}
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          <div>
+            <div
+              className="app_header_title flex align-center"
+              onClick={() => setGraphFilterIcon(!graphFilterIcon)}
             >
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
+              <span>
+                <FormatAlignLeftSharpIcon />
+              </span>
+
+              <svg
+                style={{
+                  transform: graphFilterIcon
+                    ? "rotate(180deg)"
+                    : "rotate(0deg)",
+                  transition: "transform 0.4s ease",
+                }}
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div>
+              
+            </div>
           </div>
           {/* Deals amount{" "}
           <span style={{ fontWeight: 400 }}>by referrer category</span> */}
